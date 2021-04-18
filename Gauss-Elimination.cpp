@@ -82,7 +82,8 @@ int main() {
     double b[N][1]{};  //Declaring a N*1 vector
     double x[N][1]{};  //Declaring x vector of the unknowns
 
-    // Initializing both the arrays
+    // Initializing both the arrays and vector
+    // array a has elements aij as max(i,j), and b is a unit vector 
     for (auto i{0}; i <= N - 1; ++i) {
         for (auto j{0}; j <= N - 1; ++j) {
             a[i][j] = std::max(i + 1, j + 1);
